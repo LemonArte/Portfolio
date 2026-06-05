@@ -42,20 +42,22 @@ colaboradores, mostrando proyectos, habilidades y formación de manera clara y r
 ```
 portfolio/
 │
-├── index.html              ← Página principal (todo el sitio)
+├── index.html             
 │
 ├── css/
-│   └── estilo.css          ← Estilos personalizados (cargados DESPUÉS de Bootstrap)
+│   └── estilo.css         
 │
 ├── img/
-│   ├── [TU_FOTO.jpg]       ← Foto de perfil (min. 400×400px, formato JPG/WebP)
+│   ├── [avatar.jpg]      
 │   └── proyectos/
-│       ├── [IMAGEN_1.jpg]  ← Capturas de pantalla de proyectos (600×350px aprox)
-│       ├── [IMAGEN_2.jpg]
+│       ├── 1.jpg]  
+│       ├── 2.jpg]
 │       └── ...
 │
+├── js/
+│   └── scripts.css 
 └── cv/
-    └── [TU_CV].pdf         ← Tu CV en formato PDF (para el botón de descarga)
+    └── cv.pdf         ← Tu CV en formato PDF (para el botón de descarga)
 ```
 
 ---
@@ -71,75 +73,14 @@ portfolio/
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto localmente
-
-No requiere instalación de dependencias ni servidor. Es un proyecto de **frontend estático**.
-
-### Opción 1 — Abrir directamente
-```bash
-# Clona el repositorio
-git clone https://github.com/LemonArte.git
-
-# Entra a la carpeta
-cd LemonArte
-
-# Abre el archivo principal en tu navegador
-# En Windows:
-start index.html
-# En macOS:
-open index.html
-# En Linux:
-xdg-open index.html
-```
-
-### Opción 2 — Servidor local con VS Code
-1. Instala la extensión **Live Server** en VS Code
-2. Haz clic derecho sobre `index.html` → *"Open with Live Server"*
-3. El sitio se abrirá en `http://127.0.0.1:5500`
-
----
-
-## 🌐 Despliegue
-
-**URL en producción:** [https://[TU_USUARIO].github.io/[NOMBRE_REPO]]()
-
-### Despliegue en GitHub Pages
-1. Sube el proyecto a un repositorio GitHub público
-2. Ve a **Settings** → **Pages**
-3. En *Source*, selecciona la rama `main` y la carpeta `/ (root)`
-4. Guarda — GitHub Pages generará la URL automáticamente
-
-### Alternativas de despliegue
-- **[Vercel](https://vercel.com)** — Conecta tu repo y despliega en un clic
-- **[Netlify](https://netlify.com)** — Arrastra la carpeta del proyecto a su interfaz
-
----
-
----
-
-## 📩 Formulario de contacto — Cómo activarlo
-
-El formulario incluye validación Bootstrap. Para envío real de emails sin backend:
-
-**Recomendado: [Formspree.io](https://formspree.io)** (gratis hasta 50 envíos/mes)
-
-1. Crea cuenta en formspree.io
-2. Crea un nuevo formulario → copia tu endpoint (ej: `https://formspree.io/f/xabcdefg`)
-3. En `index.html`, cambia el `<form id="formulario-contacto"` añadiendo:
-   ```html
-   <form id="formulario-contacto" action="https://formspree.io/f/[TU_ID]" method="POST" ...>
-   ```
-
----
-
 ## 👩‍💻 Autor
 
 <!-- REEMPLAZA: Tus datos reales -->
-**[TU NOMBRE]**
-- 🌐 Portfolio: [URL de tu portfolio]
-- 💼 LinkedIn: [URL de tu LinkedIn]
-- 🐱 GitHub: [URL de tu GitHub]
-- 📧 Email: [Tu email]
+**Enrique Limones**
+- 🌐 Portfolio: https://portfolio-omega-drab-tldnna1dj9.vercel.app/
+- 💼 LinkedIn: https://www.linkedin.com/in/enlimones/
+- 🐱 GitHub: https://github.com/LemonArte
+- 📧 Email: en.limones@gmail.com
 
 ---
 
@@ -151,4 +92,4 @@ El código es de libre uso para fines educativos.
 
 ---
 
-*Hecho con Bootstrap 5 y `</código>` · [TU NOMBRE] — [AÑO ACTUAL]*
+*Hecho con Bootstrap 5 y `</código>` · Enrique Limones — 2026*
