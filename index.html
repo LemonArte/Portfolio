@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enrique Limones — Portfolio Desarrollador Web</title>
+    <meta name="description" content="Portfolio profesional de Enrique Limones, Desarrollador de Aplicaciones Web, diseñador gráfico y terapeuta holístico.">
+    <meta name="author" content="Enrique Limones">
+
+    <meta property="og:title" content="Enrique Limones — Portfolio Web">
+    <meta property="og:description" content="Portfolio diseñador">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.behance.net/EnriqueLemonb">
+
+    <!-- Bootstrap 5.3.3 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <!--iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous">
+
+    <!-- Google Fonts: Oxanium (display) + JetBrains Mono (mono/body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<!-- 1. BARRA DE NAVEGACIÓN-->
+<nav id="navbar-principal" class="navbar navbar-expand-lg fixed-top navbar-oscura" aria-label="Navegación principal">
+    <div class="container">
+        <a class="navbar-brand marca-logo" href="#inicio" aria-label="Ir al inicio">
+            <span class="logo-iniciales">EL</span>
+            <span class="logo-nombre">Enrique Limones</span>
+        </a>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <button class="navbar-toggler boton-menu" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu-navegacion"
+                aria-controls="menu-navegacion" aria-expanded="false"
+                aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Menú de navegación-->
+        <div class="collapse navbar-collapse" id="menu-navegacion">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+
+                <li class="nav-item">
+                    <a class="nav-link enlace-nav" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace-nav" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace-nav" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace-nav" href="#contacto">Contacto</a>
+                </li>
+
+                <!-- Separador visual en vista escritorio -->
+                <li class="nav-item separador-nav d-none d-lg-block" aria-hidden="true">|</li>
+
+                <!-- Iconos rrss -->
+                <li class="nav-item">
+                    <a class="nav-link icono-red" href="https://github.com/LemonArte"
+                       target="_blank" rel="noopener noreferrer"
+                       title="Ver mi perfil de GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link icono-red" href="https://www.linkedin.com/in/enlimones/"
+                       target="_blank" rel="noopener noreferrer"
+                       title="Ver mi perfil de LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <!-- Botón descargar CV -->
+                <li class="nav-item ms-lg-2">
+                    <a class="btn boton-cv" href="cv/EnriqueLimones_CV.pdf"
+                       target="_blank" download aria-label="Descargar CV en PDF">
+                        <i class="fas fa-download me-1"></i>Descargar CV
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- 2. SECCIÓN: PRINCIPAL-->
+<section id="inicio" class="seccion-hero min-vh-100 d-flex align-items-center" aria-label="Presentación principal">
+
+    <!-- Cuadrícula decorativa del fondo (aria-hidden: puramente decorativa) -->
+    <div class="hero-cuadricula" aria-hidden="true"></div>
+
+    <div class="container position-relative z-1">
+        <div class="row align-items-center g-5">
+
+            <!-- ── Columna de texto ── -->
+            <div class="col-lg-7 orden-texto">
+
+                <!--pre-título-->
+                <p class="etiqueta-pre-titulo" aria-hidden="true">
+                    <span class="corchete-verde">&lt;</span>
+                    LOADING... Desarrollador de Apps Web
+                    <span class="corchete-verde">/ &gt;</span>
+                </p>
+
+                <h1 class="titulo-hero">
+                    Hola, soy<br>
+                    <span class="nombre-acento">Enrique Limones</span>
+                </h1>
+
+                <!-- ── Carrusel Bootstrap: cicla tus roles ── -->
+                <!-- Componente CAROUSEL requerido por la tarea -->
+                <div id="carrusel-roles" class="carousel slide mb-3"
+                     data-bs-ride="carousel" data-bs-interval="3500"
+                     aria-label="Carrusel de roles profesionales">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="subtitulo-hero">
+                                <span class="prefijo-codigo">const rol =&nbsp;</span>
+                                <span class="texto-rol">"Desarrollador de Aplicaciones Web"</span>
+                                <span class="cursor-parpadeante" aria-hidden="true">_</span>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="subtitulo-hero">
+                                <span class="prefijo-codigo">const rol =&nbsp;</span>
+                                <span class="texto-rol">"Diseñador Gráfico"</span>
+                                <span class="cursor-parpadeante" aria-hidden="true">_</span>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="subtitulo-hero">
+                                <span class="prefijo-codigo">const rol =&nbsp;</span>
+                                <span class="texto-rol">"Técnico en Estética y Bienestar"</span>
+                                <span class="cursor-parpadeante" aria-hidden="true">_</span>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="subtitulo-hero">
+                                <span class="prefijo-codigo">const rol =&nbsp;</span>
+                                <span class="texto-rol">"Quiromasajista certificado"</span>
+                                <span class="cursor-parpadeante" aria-hidden="true">_</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="descripcion-hero">
+                    Combino mi formación en <strong>desarrollo web</strong> con años de experiencia en
+                    <strong>diseño gráfico</strong> y <strong>bienestar integral</strong>.
+                    Esa visión holística me permite construir interfaces que no solo funcionan —
+                    también se <em>sienten</em> bien.
+                </p>
+
+                <!--iconos de teconologías -->
+                <div class="badges-tecnologias d-flex flex-wrap gap-2 mb-4" aria-label="Tecnologías principales">
+                    <span class="badge-tech"><i class="fab fa-html5"></i>&nbsp;HTML5</span>
+                    <span class="badge-tech"><i class="fab fa-css3-alt"></i>&nbsp;CSS3</span>
+                    <span class="badge-tech"><i class="fab fa-js"></i>&nbsp;JavaScript</span>
+                    <span class="badge-tech"><i class="fab fa-bootstrap"></i>&nbsp;Bootstrap</span>
+                    <span class="badge-tech"><i class="fab fa-java"></i>&nbsp;Java</span>
+                    <span class="badge-tech"><i class="fas fa-database"></i>&nbsp;Oracle</span>
+                    <span class="badge-tech"><i class="fab fa-git-alt"></i>&nbsp;Git</span>
+                </div>
+
+                <!--enlaces a secciones-->
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#proyectos" class="btn boton-primario">
+                        <i class="fas fa-code me-2"></i>Ver mis proyectos
+                    </a>
+                    <a href="#contacto" class="btn boton-secundario">
+                        <i class="fas fa-paper-plane me-2"></i>Contáctame
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Foto de perfil -->
+            <div class="col-lg-5 d-flex justify-content-center orden-foto">
+                <div class="contenedor-foto-hero">
+                    <div class="marco-foto">
+                        <!-- Si la foto fallase al cargar se muestra un icono de usuario -->
+                        <img src="img/avatar.webp"
+                             alt="mi foto de perfil"
+                             class="foto-perfil-hero img-fluid"
+                             onerror="this.parentElement.innerHTML='<div class=\'foto-placeholder\'><i class=\'fas fa-user-astronaut\'></i></div>'">
+                    </div>
+                    <!-- Decoraciones animadas (solo visuales) -->
+                    <div class="decoracion-anillo" aria-hidden="true"></div>
+                    <div class="decoracion-punto punto-verde" aria-hidden="true"></div>
+                    <div class="decoracion-punto punto-cian" aria-hidden="true"></div>
+                    <div class="decoracion-punto punto-dim" aria-hidden="true"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Flecha de scroll-->
+    <a href="#sobre-mi" class="indicador-scroll" aria-label="Ir a la sección Sobre mí">
+        <i class="fas fa-chevron-down"></i>
+    </a>
+
+</section>
+
+
+<!-- 3. SECCIÓN: SOBRE MÍ-->
+<section id="sobre-mi" class="seccion-sobre-mi" aria-labelledby="titulo-sobre-mi">
+    <div class="container">
+
+        <!-- Cabecera de sección -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto text-center">
+                <p class="etiqueta-seccion" aria-hidden="true">01. sobre mí</p>
+                <h2 class="titulo-seccion" id="titulo-sobre-mi">¿Quién hay detrás del código?</h2>
+                <div class="linea-acento mx-auto" aria-hidden="true"></div>
+            </div>
+        </div>
+
+        <div class="row g-5 align-items-start">
+
+            <!-- Columna de texto biográfico -->
+            <div class="col-lg-6">
+                <p class="texto-sobre-mi">
+                    Soy un profesional con una trayectoria poco convencional que se convierte en mi
+                    mayor fortaleza. Combino mis años de experiencia en
+                    <strong class="texto-acento">diseño gráfico</strong>,
+                    <strong class="texto-acento">Técnico Superior en Estética Integral y Bienestar</strong>
+                    y <strong class="texto-acento">masoterapeuta</strong>, desarrollando una sensibilidad
+                    visual y humana que muy pocos desarrolladores poseen.
+                </p>
+                <p class="texto-sobre-mi">
+                    Hoy canalizo ese bagaje hacia el mundo del
+                    <strong class="texto-acento">Desarrollo de Aplicaciones Web</strong>,
+                    donde el código no es solo lógica — es también diseño, experiencia de usuario
+                    y comunicación. Mis proyectos buscan el equilibrio entre funcionalidad técnica
+                    y estética, siendo mi objetivo facilitar el acceso y uso al usuario final.
+                </p>
+                <!-- Destacado -->
+                <p class="texto-sobre-mi texto-filosofia">
+                    <span class="corchete-verde">"</span>
+                    La mejor interfaz es la que no se nota: intuitiva, fluida y hecha con la misma
+                    atención al detalle que aprendí en el sector del bienestar integral.
+                    <span class="corchete-verde">"</span>
+                </p>
+
+                <!-- Tarjetas de estadísticas rápidas -->
+                <div class="row g-3 mt-2">
+                    <div class="col-6">
+                        <div class="tarjeta-stat animacion-entrada">
+                            <span class="numero-stat">5</span>
+                            <span class="label-stat">Años en diseño gráfico</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tarjeta-stat animacion-entrada">
+                            <span class="numero-stat">3</span>
+                            <span class="label-stat">Proyectos web creados</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tarjeta-stat animacion-entrada">
+                            <span class="numero-stat">3</span>
+                            <span class="label-stat">Titulaciones técnicas</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tarjeta-stat animacion-entrada">
+                            <span class="numero-stat"><i class="fas fa-map-pin fs-5"></i></span>
+                            <span class="label-stat">Sevilla, España</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna de formación en línea de tiempo -->
+            <div class="col-lg-6">
+                <h3 class="subtitulo-columna mb-4">
+                    <i class="fas fa-graduation-cap me-2 text-acento"></i>Formación
+                </h3>
+
+                <div class="linea-tiempo" role="list" aria-label="Historial de formación">
+
+                    <!-- Formación 1 — ACTUAL -->
+                    <div class="evento-tiempo activo" role="listitem">
+                        <div class="punto-tiempo" aria-hidden="true"></div>
+                        <div class="contenido-evento">
+                            <span class="fecha-evento">Actualmente</span>
+                            <h4 class="titulo-evento">Técnico Superior en Desarrollo de Aplicaciones Web</h4>
+                            <p class="lugar-evento">
+                                <i class="fas fa-building me-1"></i>IES JACARANDÁ
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Formación 2 -->
+                    <div class="evento-tiempo" role="listitem">
+                        <div class="punto-tiempo" aria-hidden="true"></div>
+                        <div class="contenido-evento">
+                            <span class="fecha-evento">2020</span>
+                            <h4 class="titulo-evento">Diseñador Gráfico</h4>
+                            <p class="lugar-evento">
+                                <i class="fas fa-building me-1"></i>EA SEVILLA
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Formación 3 -->
+                    <div class="evento-tiempo" role="listitem">
+                        <div class="punto-tiempo" aria-hidden="true"></div>
+                        <div class="contenido-evento">
+                            <span class="fecha-evento">2024</span>
+                            <h4 class="titulo-evento">Técnico Superior en Estética Integral y Bienestar</h4>
+                            <p class="lugar-evento">
+                                <i class="fas fa-building me-1"></i>IES MIGUEL DE MAÑARA
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Formación 4 -->
+                    <div class="evento-tiempo" role="listitem">
+                        <div class="punto-tiempo" aria-hidden="true"></div>
+                        <div class="contenido-evento">
+                            <span class="fecha-evento">2025</span>
+                            <h4 class="titulo-evento">Técnico en Quiromasaje</h4>
+                            <p class="lugar-evento">
+                                <i class="fas fa-building me-1"></i>KIROS
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- fin linea-tiempo -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--4. SECCIÓN PROYECTOS - PORTFOLIO-->
+<section id="proyectos" class="seccion-proyectos" aria-labelledby="titulo-proyectos">
+    <div class="container">
+
+        <!-- Cabecera de sección -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto text-center">
+                <p class="etiqueta-seccion" aria-hidden="true">02. proyectos</p>
+                <h2 class="titulo-seccion" id="titulo-proyectos">Proyectos destacados</h2>
+                <div class="linea-acento mx-auto" aria-hidden="true"></div>
+                <p class="descripcion-seccion mt-3">
+                    Una selección de proyectos que muestran mi evolución y capacidad técnica.
+                </p>
+            </div>
+        </div>
+
+        <!-- Grid Bootstrap: 1 col móvil · 2 col tablet · 3 col desktop -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" aria-label="Lista de proyectos">
+
+            <!--TARJETA PROYECTO 1-->
+            <div class="col">
+                <article class="card tarjeta-proyecto h-100 animacion-entrada">
+                    <!-- Imagen del proyecto -->
+                    <div class="imagen-proyecto">
+                        <img src="img/proyecto/1.png"
+                             class="card-img-top"
+                             alt="Captura del proyecto DOM-WARS"
+                             loading="lazy"
+                             onerror="this.parentElement.classList.add('sin-imagen')">
+                        <div class="overlay-proyecto">
+                            <!-- Abre el modal de detalle del proyecto -->
+                            <button class="btn btn-overlay"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modal-proyecto-1"
+                                    aria-label="Ver detalles de [NOMBRE PROYECTO 1]">
+                                <i class="fas fa-expand-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="numero-proyecto" aria-hidden="true">01</span>
+                        <h3 class="card-title titulo-proyecto">DOM-WARS</h3>
+                        <p class="card-text descripcion-proyecto">
+                            Proyecto de DOM con JavaScrip puro sin frameworks.
+                            Aplicación para el manejo de naves y misiones de la Alianza Rebelde
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3 mt-auto" aria-label="Stack tecnológico">
+                            <span class="badge-stack">HTML5</span>
+                            <span class="badge-stack">CSS</span>
+                            <span class="badge-stack">JavaScript</span>
+                        </div>
+                        <!-- Botones: código + demo -->
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/LemonArte/DOM-WARS"
+                               target="_blank" rel="noopener noreferrer"
+                               class="btn boton-proyecto-ghost flex-fill">
+                                <i class="fab fa-github me-1"></i>Código
+                            </a>
+                            <a href="https://dom-wars.vercel.app/"
+                               target="_blank" rel="noopener noreferrer"
+                               class="btn boton-proyecto-acento flex-fill">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!--TARJETA PROYECTO 2-->
+            <div class="col">
+                <article class="card tarjeta-proyecto h-100 animacion-entrada">
+                    <div class="imagen-proyecto">
+                        <img src="img/proyecto/2.jpg"
+                             class="card-img-top"
+                             alt="Captura del proyecto 2"
+                             loading="lazy"
+                             onerror="this.parentElement.classList.add('sin-imagen')">
+                        <div class="overlay-proyecto">
+                            <button class="btn btn-overlay"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modal-proyecto-2"
+                                    aria-label="Ver detalles de M I A">
+                                <i class="fas fa-expand-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="numero-proyecto" aria-hidden="true">02</span>
+                        <h3 class="card-title titulo-proyecto">M I A</h3>
+                        <p class="card-text descripcion-proyecto">
+                            Proyecto de fotografía creativa, cuyo tema de trabajo está enfocado en los abusos hacia las mujeres
+                            y su cosificación como propiedad.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
+                            <span class="badge-stack">Java</span>
+                            <span class="badge-stack">MySQL</span>
+                            <span class="badge-stack">JDBC</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://www.behance.net/gallery/116719243/MIA" target="_blank" rel="noopener noreferrer"
+                               class="btn boton-proyecto-ghost flex-fill">
+                                <i class="fab fa-behance me-1"></i>
+                            </a>
+                            <a href="https://www.behance.net/gallery/116719243/MIA" target="_blank" rel="noopener noreferrer"
+                               class="btn boton-proyecto-acento flex-fill">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!--TARJETA PROYECTO 3-->
+            <div class="col">
+                <article class="card tarjeta-proyecto h-100 animacion-entrada">
+                    <div class="imagen-proyecto">
+                        <img src="img/proyecto/3.png"
+                             class="card-img-top"
+                             alt="Captura del proyecto O V O"
+                             loading="lazy"
+                             onerror="this.parentElement.classList.add('sin-imagen')">
+                        <div class="overlay-proyecto">
+                            <button class="btn btn-overlay"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modal-proyecto-3"
+                                    aria-label="Ver detalles de O V O">
+                                <i class="fas fa-expand-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="numero-proyecto" aria-hidden="true">03</span>
+                        <h3 class="card-title titulo-proyecto">O V O</h3>
+                        <p class="card-text descripcion-proyecto">
+                            OVO System es un programa de gestación ectópica, es decir, fuera del útero.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3 mt-auto">
+                            <span class="badge-stack">Figma</span>
+                            <span class="badge-stack">CSS</span>
+                            <span class="badge-stack">Cinema 4D</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://www.behance.net/gallery/90985403/OVO-SYSTEM" target="_blank" rel="noopener noreferrer"
+                               class="btn boton-proyecto-ghost flex-fill">
+                                <i class="fab fa-behance me-1"></i>
+                            </a>
+                            <a href="https://www.behance.net/gallery/90985403/OVO-SYSTEM" target="_blank" rel="noopener noreferrer"
+                               class="btn boton-proyecto-acento flex-fill">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div><!-- fin proyectos -->
+    </div>
+</section>
+
+
+<!--5. MODALES DE DETALLE por proyecto-->
+<!-- Modal Proyecto 1 -->
+<div class="modal fade" id="modal-proyecto-1" tabindex="-1"
+     aria-labelledby="titulo-modal-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content contenido-modal">
+            <div class="modal-header cabecera-modal">
+                <h4 class="modal-title" id="titulo-modal-1">[NOMBRE PROYECTO 1]</h4>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar modal"></button>
+            </div>
+            <div class="modal-body cuerpo-modal">
+                <img src="img/proyecto/1.png"
+                     alt="Vista del proyecto [NOMBRE PROYECTO 1]"
+                     class="img-fluid rounded mb-4 w-100"
+                     loading="lazy">
+                <h5 class="subtitulo-modal">Descripción del proyecto</h5>
+                <p> Proyecto de DOM con JavaScrip puro sin frameworks.
+                    Aplicación para el manejo de naves y misiones de la Alianza Rebelde</p>
+                <h5 class="subtitulo-modal">Funcionalidades principales</h5>
+                <h5 class="subtitulo-modal">Tecnologías utilizadas</h5>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                    <span class="badge-stack">HTML5</span>
+                    <span class="badge-stack">CSS3</span>
+                    <span class="badge-stack">JavaScript</span>
+                </div>
+            </div>
+            <div class="modal-footer pie-modal">
+                <a href="https://github.com/LemonArte/DOM-WARS" target="_blank" rel="noopener noreferrer"
+                   class="btn boton-proyecto-ghost">
+                    <i class="fab fa-github me-1"></i>Ver en GitHub
+                </a>
+                <a href="https://dom-wars.vercel.app/" target="_blank" rel="noopener noreferrer"
+                   class="btn boton-primario">
+                    <i class="fas fa-external-link-alt me-1"></i>Ver demo en vivo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Proyecto 2 -->
+<div class="modal fade" id="modal-proyecto-2" tabindex="-1"
+     aria-labelledby="titulo-modal-2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content contenido-modal">
+            <div class="modal-header cabecera-modal">
+                <h4 class="modal-title" id="titulo-modal-2">M I A</h4>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar modal"></button>
+            </div>
+            <div class="modal-body cuerpo-modal">
+                <img src="img/proyecto/2.jpg" alt="Vista del proyecto M I A" class="img-fluid rounded mb-4 w-100" loading="lazy">
+                <h5 class="subtitulo-modal">Descripción del proyecto</h5>
+                <p>Proyecto de fotografía creativa, cuyo tema de trabajo está enfocado en los abusos hacia las mujeres
+                     y su cosificación como propiedad.</p>
+                <h5 class="subtitulo-modal">Tecnologías</h5>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                    <span class="badge-stack">Java</span>
+                    <span class="badge-stack">MySQL</span>
+                    <span class="badge-stack">JDBC</span>
+                </div>
+            </div>
+            <div class="modal-footer pie-modal">
+                <a href="https://www.behance.net/gallery/116719243/MIA" target="_blank" class="btn boton-proyecto-ghost"><i class="fab fa-behance me-1"></i>Ver en GitHub</a>
+                <a href="https://www.behance.net/gallery/116719243/MIA" target="_blank" class="btn boton-primario"><i class="fas fa-external-link-alt me-1"></i>Ver demo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Proyecto 3 -->
+<div class="modal fade" id="modal-proyecto-3" tabindex="-1" aria-labelledby="titulo-modal-3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content contenido-modal">
+            <div class="modal-header cabecera-modal">
+                <h4 class="modal-title" id="titulo-modal-3">O V O</h4>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar modal"></button>
+            </div>
+            <div class="modal-body cuerpo-modal">
+                <img src="img/proyecto/3.jpg" alt="Vista del proyecto O V O" class="img-fluid rounded mb-4 w-100" loading="lazy">
+                <h5 class="subtitulo-modal">Descripción</h5>
+                <p>OVO System es un programa de gestación ectópica, es decir, fuera del útero. Podríamos decir que sigue el mismo procedimiento que el método de vientre subrogado, 
+                    pero en este caso no se usa a la mujer como medio útil. El feto es desarrollado en una cabina, dentro de una clínica y supervisada por médicos que nos mantienen 
+                    al tanto del estado del bebé.
+                    Esto nos ayudará a equilibrar mucho mejor los roles materno-paternos y evitar la cosificación de la mujer como un medio para el que obtener un beneficio, 
+                    en este caso, un hijo.</p>
+                <h5 class="subtitulo-modal">Tecnologías</h5>
+                <div class="d-flex flex-wrap gap-2 mb-2"><span class="badge-stack">PHP</span><span class="badge-stack">MySQL</span><span class="badge-stack">Bootstrap</span></div>
+            </div>
+            <div class="modal-footer pie-modal">
+                <a href="https://www.behance.net/gallery/90985403/OVO-SYSTEM" target="_blank" class="btn boton-proyecto-ghost"><i class="fab fa-behance me-1"></i>GitHub</a>
+                <a href="https://www.behance.net/gallery/90985403/OVO-SYSTEM" target="_blank" class="btn boton-primario"><i class="fas fa-external-link-alt me-1"></i>Demo</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 6. SECCIÓN HABILIDADES-->
+<section id="habilidades" class="seccion-habilidades" aria-labelledby="titulo-habilidades">
+    <div class="container">
+        <!-- Cabecera de sección -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto text-center">
+                <p class="etiqueta-seccion" aria-hidden="true">03. habilidades</p>
+                <h2 class="titulo-seccion" id="titulo-habilidades">Stack técnico</h2>
+                <div class="linea-acento mx-auto" aria-hidden="true"></div>
+            </div>
+        </div>
+        <!-- Tablas de habilidades por categoría -->
+        <div class="row g-4">
+            <!-- ── Categoría: Frontend ── -->
+            <div class="col-md-6 col-xl-4">
+                <div class="tarjeta-habilidades h-100 animacion-entrada">
+                    <h3 class="titulo-categoria-skill">
+                        <i class="fas fa-laptop-code me-2 icono-categoria" aria-hidden="true"></i>Frontend
+                    </h3>
+                    <!-- Bootstrap Table con estilos OLED -->
+                    <table class="table tabla-skills" aria-label="Habilidades de Frontend">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tecnología</th>
+                                <th scope="col">Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fab fa-html5 me-2" style="color:#e44d26" aria-hidden="true"></i>HTML5</td>
+                                <td><span class="nivel-skill nivel-alto">Avanzado</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-css3-alt me-2" style="color:#264de4" aria-hidden="true"></i>CSS3</td>
+                                <td><span class="nivel-skill nivel-alto">Avanzado</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-js me-2" style="color:#f7df1e" aria-hidden="true"></i>JavaScript</td>
+                                <td><span class="nivel-skill nivel-medio">Intermedio</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-bootstrap me-2" style="color:#7952b3" aria-hidden="true"></i>Bootstrap 5</td>
+                                <td><span class="nivel-skill nivel-alto">Avanzado</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-react me-2" style="color:#61dafb" aria-hidden="true"></i>React</td>
+                                <td><span class="nivel-skill nivel-basico">Básico</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ── Categoría: Backend ── -->
+            <div class="col-md-6 col-xl-4">
+                <div class="tarjeta-habilidades h-100 animacion-entrada">
+                    <h3 class="titulo-categoria-skill">
+                        <i class="fas fa-server me-2 icono-categoria" aria-hidden="true"></i>Backend y Datos
+                    </h3>
+                    <table class="table tabla-skills" aria-label="Habilidades de Backend">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tecnología</th>
+                                <th scope="col">Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fab fa-java me-2" style="color:#f89820" aria-hidden="true"></i>Java 21</td>
+                                <td><span class="nivel-skill nivel-medio">Intermedio</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-php me-2" style="color:#8892bf" aria-hidden="true"></i>PHP</td>
+                                <td><span class="nivel-skill nivel-medio">Intermedio</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-leaf me-2" style="color:#6db33f" aria-hidden="true"></i>Spring Boot</td>
+                                <td><span class="nivel-skill nivel-basico">Básico</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-database me-2" style="color:#00758f" aria-hidden="true"></i>MySQL</td>
+                                <td><span class="nivel-skill nivel-medio">Intermedio</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-database me-2" style="color:#f80000" aria-hidden="true"></i>Oracle / PL-SQL</td>
+                                <td><span class="nivel-skill nivel-basico">Básico</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ── Categoría: Herramientas y Diseño ── -->
+            <div class="col-md-6 col-xl-4">
+                <div class="tarjeta-habilidades h-100 animacion-entrada">
+                    <h3 class="titulo-categoria-skill">
+                        <i class="fas fa-tools me-2 icono-categoria" aria-hidden="true"></i>Herramientas y Diseño
+                    </h3>
+                    <table class="table tabla-skills" aria-label="Herramientas y diseño">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tecnología</th>
+                                <th scope="col">Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fab fa-git-alt me-2" style="color:#f05032" aria-hidden="true"></i>Git / GitHub</td>
+                                <td><span class="nivel-skill nivel-medio">Intermedio</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-figma me-2" style="color:#a259ff" aria-hidden="true"></i>Figma</td>
+                                <td><span class="nivel-skill nivel-alto">Avanzado</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-adobe me-2" style="color:#ff0000" aria-hidden="true"></i>Adobe Suite</td>
+                                <td><span class="nivel-skill nivel-alto">Avanzado</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-paint-brush me-2" style="color:#00ff88" aria-hidden="true"></i>Diseño UX/UI</td>
+                                <td><span class="nivel-skill nivel-alto">Avanzado</span></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-docker me-2" style="color:#2496ed" aria-hidden="true"></i>Docker</td>
+                                <td><span class="nivel-skill nivel-basico">Básico</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div><!-- fin row habilidades -->
+
+        <!-- Habilidades blandas y transversales -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h3 class="subtitulo-columna mb-4">
+                    <i class="fas fa-star me-2 text-acento" aria-hidden="true"></i>Habilidades transversales
+                </h3>
+                <div class="d-flex flex-wrap justify-content-center gap-3" role="list"
+                     aria-label="Habilidades blandas">
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-eye me-1" aria-hidden="true"></i>Atención al detalle</span>
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-users me-1" aria-hidden="true"></i>Trato con clientes</span>
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-palette me-1" aria-hidden="true"></i>Sensibilidad estética</span>
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-brain me-1" aria-hidden="true"></i>Pensamiento analítico</span>
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-sync-alt me-1" aria-hidden="true"></i>Aprendizaje continuo</span>
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-comments me-1" aria-hidden="true"></i>Comunicación efectiva</span>
+                    <span class="badge-habilidad-blanda" role="listitem"><i class="fas fa-heart me-1" aria-hidden="true"></i>Empatía y bienestar</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!--7. SECCIÓN: CONTACTO-->
+<section id="contacto" class="seccion-contacto" aria-labelledby="titulo-contacto">
+    <div class="container">
+
+        <!-- Cabecera de sección -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto text-center">
+                <p class="etiqueta-seccion" aria-hidden="true">04. contacto</p>
+                <h2 class="titulo-seccion" id="titulo-contacto">¿Hablamos?</h2>
+                <div class="linea-acento mx-auto" aria-hidden="true"></div>
+                <p class="descripcion-seccion mt-3">
+                    Estoy abierto/a a nuevas oportunidades, colaboraciones y proyectos.<br>
+                    No dudes en escribirme — respondo en menos de 24h.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+
+            <!-- Información de contacto -->
+            <div class="col-lg-4">
+                <div class="tarjeta-info-contacto">
+                    <h3 class="subtitulo-columna mb-4">Información de contacto</h3>
+
+                    <!-- Email -->
+                    <div class="item-contacto">
+                        <i class="fas fa-envelope icono-contacto" aria-hidden="true"></i>
+                        <div>
+                            <p class="label-contacto">Email</p>
+                            <a href="mailto:en.limones@gmail.com"
+                               class="valor-contacto">en.limones@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Ubicación -->
+                    <div class="item-contacto">
+                        <i class="fas fa-map-marker-alt icono-contacto" aria-hidden="true"></i>
+                        <div>
+                            <p class="label-contacto">Ubicación</p>
+                            <p class="valor-contacto">Sevilla, Andalucía, España</p>
+                        </div>
+                    </div>
+                    <!-- Disponibilidad -->
+                    <div class="item-contacto">
+                        <i class="fas fa-circle icono-contacto icono-disponible" aria-hidden="true"></i>
+                        <div>
+                            <p class="label-contacto">Disponibilidad</p>
+                            <p class="valor-contacto">
+                                Disponible para prácticas / trabajo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto Bootstrap -->
+            <div class="col-lg-7">
+                <!-- novalidate, validación de Bootstrap con .was-validated -->
+                <form id="formulario-contacto" class="formulario-contacto" novalidate
+                      aria-label="Formulario de contacto">
+                    <div class="row g-3">
+                        <!-- Campo del nombre -->
+                        <div class="col-md-6">
+                            <label for="campo-nombre" class="form-label etiqueta-campo">
+                                Nombre <span class="campo-obligatorio" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text"
+                                   class="form-control campo-formulario"
+                                   id="campo-nombre"
+                                   name="nombre"
+                                   placeholder="Tu nombre completo"
+                                   required
+                                   minlength="2"
+                                   autocomplete="name">
+                            <div class="invalid-feedback">
+                                Por favor, introduce tu nombre (mínimo 2 caracteres).
+                            </div>
+                        </div>
+
+                        <!-- Campo: Email -->
+                        <div class="col-md-6">
+                            <label for="campo-email" class="form-label etiqueta-campo">
+                                Email <span class="campo-obligatorio" aria-hidden="true">*</span>
+                            </label>
+                            <input type="email"
+                                   class="form-control campo-formulario"
+                                   id="campo-email"
+                                   name="email"
+                                   placeholder="tu@email.com"
+                                   required
+                                   autocomplete="email">
+                            <div class="invalid-feedback">
+                                Por favor, introduce un email válido.
+                            </div>
+                        </div>
+
+                        <!-- Campo: Asunto -->
+                        <div class="col-12">
+                            <label for="campo-asunto" class="form-label etiqueta-campo">
+                                Asunto <span class="campo-obligatorio" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text"
+                                   class="form-control campo-formulario"
+                                   id="campo-asunto"
+                                   name="asunto"
+                                   placeholder="¿Sobre qué quieres hablar?"
+                                   required>
+                            <div class="invalid-feedback">
+                                Por favor, indica el asunto del mensaje.
+                            </div>
+                        </div>
+
+                        <!-- Campo: Mensaje -->
+                        <div class="col-12">
+                            <label for="campo-mensaje" class="form-label etiqueta-campo">
+                                Mensaje <span class="campo-obligatorio" aria-hidden="true">*</span>
+                            </label>
+                            <textarea class="form-control campo-formulario"
+                                      id="campo-mensaje"
+                                      name="mensaje"
+                                      rows="6"
+                                      placeholder="Cuéntame en qué puedo ayudarte..."
+                                      required
+                                      minlength="20"
+                                      aria-describedby="ayuda-mensaje"></textarea>
+                            <div id="ayuda-mensaje" class="form-text texto-ayuda-campo">
+                                Mínimo 20 caracteres.
+                            </div>
+                            <div class="invalid-feedback">
+                                El mensaje debe tener al menos 20 caracteres.
+                            </div>
+                        </div>
+
+                        <!-- Checkbox: política de privacidad -->
+                        <div class="col-12">
+                            <div class="form-check check-privacidad">
+                                <input class="form-check-input check-campo"
+                                       type="checkbox"
+                                       id="check-privacidad"
+                                       name="privacidad"
+                                       required>
+                                <label class="form-check-label etiqueta-check" for="check-privacidad">
+                                    He leído y acepto el uso de mis datos para gestionar esta consulta.
+                                    No se compartirán con terceros.
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debes aceptar para enviar el formulario.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón enviar -->
+                        <div class="col-12">
+                            <button type="submit" class="btn boton-primario boton-enviar-form w-100">
+                                <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Enviar mensaje
+                            </button>
+                        </div>
+
+                        <!-- Alertas de resultado Bootstrap Alert-->
+                        <div class="col-12">
+                            <div id="alerta-exito"
+                                 class="alert alert-success alerta-form d-none"
+                                 role="alert" aria-live="polite">
+                                <i class="fas fa-check-circle me-2" aria-hidden="true"></i>
+                                <strong>¡Mensaje enviado!</strong> Me pondré en contacto contigo pronto.
+                            </div>
+                            <div id="alerta-error"
+                                 class="alert alert-danger alerta-form d-none"
+                                 role="alert" aria-live="polite">
+                                <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>
+                                <strong>Error al enviar.</strong> Inténtalo de nuevo o escríbeme directamente
+                                a <a href="mailto:en.limones@gmail.com" class="alerta-enlace">en.limones@gmail.com</a>.
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer class="pie-pagina" role="contentinfo">
+    <div class="container">
+        <div class="row align-items-center g-3">
+
+            <!-- Copyright -->
+            <div class="col-md-4 text-center text-md-start">
+                <p class="texto-copyright">
+                    &copy; <span id="anio-actual"></span>
+                    <span class="texto-acento">Enrique Limones</span>
+                </p>
+            </div>
+
+            <!-- Tagline -->
+            <div class="col-md-4 text-center">
+                <p class="tagline-footer" aria-label="Hecho con Bootstrap 5">
+                    <span class="codigo-footer" aria-hidden="true">&lt;/</span>
+                    Hecho con Bootstrap 5 y
+                    <span class="texto-acento">pasión</span>
+                    <span class="codigo-footer" aria-hidden="true">&gt;</span>
+                </p>
+            </div>
+
+            <!-- Redes del footer -->
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
+                <a href="https://github.com/LemonArte" target="_blank" rel="noopener noreferrer"
+                   class="enlace-footer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/enlimones/" target="_blank" rel="noopener noreferrer"
+                   class="enlace-footer" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:en.limones@gmail.com"
+                   class="enlace-footer" title="Email" aria-label="Email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<!--SCRIPTS-->
+
+<!-- Bootstrap 5.3.3 JS Bundle (incluye Popper.js) — SRI hash oficial -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmR6GN3WSTaFETj8T31rDIi9WO2"
+        crossorigin="anonymous"></script>
+
+<!--SCRIPTS-->
+    <!-- 1. Bootstrap JS (CDN) PRIMERO -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmR6GN3WSTaFETj8T31rDIi9WO2"
+            crossorigin="anonymous"></script>
+
+    <!-- 2. archivo js DESPUÉS de Bootstrap -->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
