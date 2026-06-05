@@ -57,7 +57,7 @@ portfolio/
 ├── js/
 │   └── scripts.css 
 └── cv/
-    └── cv.pdf         ← Tu CV en formato PDF (para el botón de descarga)
+    └── cv.pdf  
 ```
 
 ---
