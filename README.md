@@ -1,4 +1,4 @@
-# 🚀 Portfolio Profesional — [TU NOMBRE]
+# 🚀 Portfolio — Enrique Limones
 
 > Desarrollador de Aplicaciones Web · Diseñador Gráfico · Técnico en Estética y Bienestar
 
